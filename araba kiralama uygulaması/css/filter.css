@@ -1,0 +1,93 @@
+.filter-background {
+    position: relative;
+    max-width: 100%;
+    max-height: 700px;
+    background: url('https://images.pexels.com/photos/4101555/pexels-photo-4101555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')
+                no-repeat center center;
+}
+
+.filter-container {
+    position: relative;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 95px;
+    border-radius: 10px;
+}
+
+.filter {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter h3 {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #3183e0;
+    font-size: 1.7em;
+}
+
+.filter div {
+    flex-basis: 45%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.filter div label {
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 1.3em;
+}
+
+.filter div input,
+.filter div select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.filter button {
+    padding: 12px 25px;
+    background-color: #3183e0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+    display: block;
+}
+
+.filter button:hover {
+    background-color: #106db0;
+}
+
+@media screen and (max-width: 1030px) {
+    .filter-container {
+        padding: 5px;
+    }
+    .filter {
+        padding: 15px;
+    }
+    .filter div {
+        flex-basis: 48%;
+    }
+    .filter div label {
+        font-size: 1em;
+    }
+    .filter div select {
+        font-size: 0.65em;
+    }
+    .filter h3 {
+        font-size: 1.5em;
+    }
+}
